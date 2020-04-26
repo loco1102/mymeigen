@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+/*　　　TOPページ　　　*/
+body {
+  background: linear-gradient(#7f7fd5, #86a8e7, #91eae4);
+  background-attachment: fixed;
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+h1 {
+  margin: 60px 0 0 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+html {
+  min-height: 100%;
+}
+
+/*ここからナビゲーション*/
+
+.header-navigation {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: #39C;
+  padding: 10px 0;
+}
+
+.header-navigation:after {
+  clear: both;
+  display: block;
+  content: " ";
+}
+
+.header-navigation li {
+  float: left;
+  padding: 0 30px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.header-navigation li a {
+  color: white;
+  text-decoration: none;
+}
+
+/*ここまでナビゲーション*/
+
+/*ここからランダム名言*/
+
+.container {
+  width: 920px;
+  margin: 0 auto 40px auto;
+}
+
+.text-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.card-contents {
+  padding: 40px;
+  margin: 50px auto 30px auto;
+  max-width: 900px;
+  background-color: #fff;
+}
+
+/*ここまでランダム名言*/
+
+/*ここからランダムボタン*/
+
+.btn {
+  background: #39C;
+  /* 背景色 */
+  color: #fff;
+  /* 文字色 */
+  padding: 16px 20px;
+  /* 上下の余白、左右の余白 */
+  text-decoration: none;
+  /* デフォルトで入る下線を消す */
+  border-radius: 30px;
+  /* 角を丸くする */
+  transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btnWrap {
+  text-align: right;
+}
+
+.btnList {
+  text-align: right;
+}
+
+/*ここまでランダムボタン*/
+
+/*ここからジャンルBOX*/
+
+.container2 {
+  width: 920px;
+  margin: 40px auto 200px auto;
+}
+
+.child {
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 87px;
+  margin-bottom: 20px;
+  float: left;
+  font-size: 12px;
+}
+
+/*ここまでジャンルBOX*/
+
+/*ここからフッター*/
+
+.copyright {
+  color: #777;
+  text-align: center;
+  margin: 80px auto 40px auto;
+}
+
+.main:after {
+  clear: both;
+  display: block;
+  content: " ";
+}
+
+/*ここまでフッター*/
+/*　　　TOPページ　　　*/
+
+
+/*　　　検索ページ　　　*/
+/*ここからジャンルナビ*/
+
+.genre-navigation {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #39C;
+  padding: 10px 0;
+  margin: 30px 0;
+}
+
+.genre-navigation:after {
+  clear: both;
+  display: block;
+  content: " ";
+}
+
+.genre-navigation li {
+  float: left;
+  padding: 0 80px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.genre-navigation li a {
+  color: white;
+  text-decoration: none;
+}
+
+/*ここまでジャンルナビ*/
+/*　　　検索ページ　　　*/
+
+
+/*　　　男性、女性、名前順ページ　　　*/
+/*ここからリスト*/
+
+.name {
+  margin: 0px 28px 0px 0px;
+  padding: 0;
+  position: relative;
+}
+
+.name li {
+  color: #2d8fdd;
+  font-size: 20px;
+  border-left: solid 15px #2d8fdd;/*左側の線*/
+  background: #f1f8ff;/*背景色*/
+  margin-bottom: 8px;/*下のバーとの余白*/
+  line-height: 1.5;
+  padding: 1.5em;
+  list-style-type: none!important;/*ポチ消す*/
+}
+
+/*ここまでリスト*/
+/*　　　男性、女性、名前順ページ　　　*/
+
+/*　　　偉人ページ　　　*/
+/*ここからimage*/
+
+.image {
+  text-align: center;
+}
+
+.btnBack {
+  text-align: right;
+}
+
+.comment {
+  font-size: 40px;
+  text-align: center;
+}
+
+/*ここまでimage*/
