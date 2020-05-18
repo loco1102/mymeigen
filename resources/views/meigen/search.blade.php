@@ -15,53 +15,11 @@
                     </ul>
                 </div>
                 <h2>ジャンル</h2>
-                <div class="child">
-                    <img width="170" height="120" src="../images/yuu0100-073.jpg" alt="ジャンル画像">
-                    <h2 class="title"><a href="detail">友情</a></h2>
-                </div>
-                <div class="child">
-                    <img width="170" height="120" src="../images/yuu0100-073.jpg" alt="ジャンル画像">
-                    <h2 class="title"><a href="detail">お金</a></h2>
-                </div>
-                <div class="child">
-                    <img width="170" height="120" src="../images/yuu0100-073.jpg" alt="ジャンル画像">
-                    <h2 class="title"><a href="detail">恋愛</a></h2>
-                </div>
-                <div class="child">
-                    <img width="170" height="120" src="../images/yuu0100-073.jpg" alt="ジャンル画像">
-                    <h2 class="title"><a href="detail">人生</a></h2>
-                </div>
-                <div class="child">
-                    <img width="170" height="120" src="../images/yuu0100-073.jpg" alt="ジャンル画像">
-                    <h2 class="title"><a href="detail">努力</a></h2>
-                </div>
-                <div class="child">
-                    <img width="170" height="120" src="../images/yuu0100-073.jpg" alt="ジャンル画像">
-                    <h2 class="title"><a href="detail">仕事</a></h2>
-                </div>
-                <div class="child">
-                    <img width="170" height="120" src="../images/yuu0100-073.jpg" alt="ジャンル画像">
-                    <h2 class="title"><a href="detail">幸福</a></h2>
-                </div>
-                <div class="child">
-                    <img width="170" height="120" src="../images/yuu0100-073.jpg" alt="ジャンル画像">
-                    <h2 class="title"><a href="detail">挑戦</a></h2>
-                </div>
-                <div class="child">
-                    <img width="170" height="120" src="../images/yuu0100-073.jpg" alt="ジャンル画像">
-                    <h2 class="title"><a href="detail">勇気</a></h2>
-                </div>
-                <div class="child">
-                    <img width="170" height="120" src="../images/yuu0100-073.jpg" alt="ジャンル画像">
-                    <h2 class="title"><a href="detail">過去</a></h2>
-                </div>
-                <div class="child">
-                    <img width="170" height="120" src="../images/yuu0100-073.jpg" alt="ジャンル画像">
-                    <h2 class="title"><a href="detail">未来</a></h2>
-                </div>
-                <div class="child">
-                    <img width="170" height="120" src="../images/yuu0100-073.jpg" alt="ジャンル画像">
-                    <h2 class="title"><a href="detail">道</a></h2>
-                </div>
+                @foreach( $genre_data as $genre)
+                    <div class="child">
+                        <img width="170" height="120" src="{{ $genre->genre_photo }}" alt="ジャンル画像">
+                        <h2 class="title"><a href="detail">{{ $genre->genre_name }}</a></h2>
+                    </div>
+                @endforeach
             </div>
 @endsection

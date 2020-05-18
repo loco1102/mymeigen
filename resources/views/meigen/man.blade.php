@@ -15,28 +15,11 @@
                 </ul>
             </div>
             <div class="name">
+                @foreach( $izin_data as $izin)
                 <ul>
-                    <li><a href="izin">ソクラテス</a></li>
-                    <li><a href="izin">ローガン・スミス</a></li>
-                    <li><a href="izin">ジョン・F・ケネディ</a></li>
-                    <li><a href="izin">ウィリアム・シェイクスピア</a></li>
-                    <li><a href="izin">ソクラテス</a></li>
-                    <li><a href="izin">ローガン・スミス</a></li>
-                    <li><a href="izin">ジョン・F・ケネディ</a></li>
-                    <li><a href="izin">ウィリアム・シェイクスピア</a></li>
-                    <li><a href="izin">ソクラテス</a></li>
-                    <li><a href="izin">ローガン・スミス</a></li>
-                    <li><a href="izin">ジョン・F・ケネディ</a></li>
-                    <li><a href="izin">ウィリアム・シェイクスピア</a></li>
-                    <li><a href="izin">ソクラテス</a></li>
-                    <li><a href="izin">ローガン・スミス</a></li>
-                    <li><a href="izin">ジョン・F・ケネディ</a></li>
-                    <li><a href="izin">ウィリアム・シェイクスピア</a></li>
-                    <li><a href="izin">ソクラテス</a></li>
-                    <li><a href="izin">ローガン・スミス</a></li>
-                    <li><a href="izin">ジョン・F・ケネディ</a></li>
-                    <li><a href="izin">ウィリアム・シェイクスピア</a></li>
+                    <li><a href="izin">{{ $izin->izin_name }}</a></li>
                 </ul>
+                @endforeach
             </div>
         </div>
 @endsection
