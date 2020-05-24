@@ -25,16 +25,16 @@
         <header>
             <div>
                 <div class="header-title-area">
-                    <h1 class="logo"><a href="index"><img src="{{ asset('/images/meigen.png') }}" width="274" height="89" alt="名言サイト"></a></h1>
+                    <h1 class="logo"><a href="/meigen/index"><img src="{{ asset('/images/meigen.png') }}" width="274" height="89" alt="名言サイト"></a></h1>
                 </div>
             </div>
         </header>
         <div class="header-navigation">
             <ul>
-                <li><a href="index">Top</a></li>
-                <li><a href="search">検索</a></li>
-                <li><a href="new">新着</a></li>
-                <li><a href="ranking">ランキング</a></li>
+                <li><a href="/meigen/index">Top</a></li>
+                <li><a href="/meigen/search">検索</a></li>
+                <li><a href="/meigen/new">新着</a></li>
+                <li><a href="/meigen/ranking">ランキング</a></li>
             </ul>
         </div>
         <div class="container">

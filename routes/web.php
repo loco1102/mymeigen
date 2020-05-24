@@ -23,7 +23,7 @@ Route::group(['prefix' => 'meigen'], function() {
     Route::get('name', 'MeigenController@name');
     Route::get('man', 'MeigenController@man');
     Route::get('woman', 'MeigenController@woman');
-    Route::get('detail', 'MeigenController@detail');
+    Route::get('genre/detail/{id}', 'MeigenController@detail');
     Route::get('ranking', 'MeigenController@ranking');
-    Route::get('izin', 'MeigenController@izin');
+    Route::get('izin/{id}', 'MeigenController@izin');
 });

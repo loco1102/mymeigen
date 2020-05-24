@@ -29,6 +29,12 @@ class MeigenController extends Controller
         return view('meigen.search' , ["genre_data"=>$genre_data ]);
     }
     
+    public function genre()
+    {
+        $genre_data = Genre::all();
+        return view('meigen.genre' , ["genre_data"=>$genre_data ]);
+    }
+    
     public function new()
     {
         $meigen_data = Meigen::orderBy('meigen', 'desc')->get();
@@ -58,13 +64,17 @@ class MeigenController extends Controller
         return view('meigen.ranking');
     }
     
-    public function izin()
+    public function izin($id)
     {
-        return view('meigen.izin');
+        $izin_data = Izin::find($id);
+        $meigen_data = Meigen::where("izin_id",$izin_data->id)->get();
+        return view('meigen.izin' , ["izin_data"=>$izin_data, "meigen_data"=>$meigen_data ]);
     }
     
-    public function detail()
+    public function detail($id)
     {
-        return view('meigen.detail');
+        $genre_data = Genre::find($id);
+        $meigen_data = Meigen::where("genre_id",$genre_data->id)->get();
+        return view('meigen.detail' , ["genre_data"=>$genre_data, "meigen_data"=>$meigen_data ]);
     }
 }
