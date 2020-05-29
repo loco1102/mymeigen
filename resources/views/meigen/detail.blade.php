@@ -7,7 +7,7 @@
 @section('content')
             <div class="image">
                 <img src="{{ $genre_data->genre_photo }}" width="405" height="499" alt="ジャンル">
-                <h2>{{ $genre_data->genre_name }}</h2>
+                <h3>{{ $genre_data->genre_name }}</h3>
             </div>
             <div class="container">
                 <div class="card-contents">
@@ -20,7 +20,7 @@
             <div class="container">
                 @foreach( $meigen_data as $meigen)
                 <div class="card-contents">
-                    <h2 class="izin"><a href="{{ url('meigen/izin', $meigen->id) }}">{{ $meigen->izin->izin_name }}</a></h2>
+                    <h3 class="izin"><a href="{{ url('meigen/izin', $meigen->id) }}">{{ $meigen->izin->izin_name }}</a></h3>
                     <p class="meigen">{{ $meigen->meigen }}</p>
                 </div>
                 @endforeach

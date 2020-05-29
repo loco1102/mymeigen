@@ -14,9 +14,10 @@ h1 {
   padding: 0;
 }
 
-h2 {
+h3 {
   margin: 0 0 10px 0;
   padding: 0;
+  color: #fff;
 }
 
 html {
@@ -72,6 +73,8 @@ html {
   margin: 50px auto 30px auto;
   max-width: 900px;
   background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 12px 12px 17px -8px;  
 }
 
 /*ここまでランダム名言*/
