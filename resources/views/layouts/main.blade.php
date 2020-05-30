@@ -34,7 +34,7 @@
                 <li><a href="/meigen/index">Top</a></li>
                 <li><a href="/meigen/search">検索</a></li>
                 <li><a href="/meigen/new">新着</a></li>
-                <li><a href="/meigen/ranking">ランキング</a></li>
+            <!--    <li><a href="/meigen/ranking">ランキング</a></li> -->
             </ul>
         </div>
         <div class="container">

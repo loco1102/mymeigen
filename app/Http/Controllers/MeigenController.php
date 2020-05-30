@@ -49,13 +49,13 @@ class MeigenController extends Controller
     
     public function man()
     {
-        $izin_data = Izin::where("gender","男")->get();
+        $izin_data = Izin::where("gender","男")->orderBy('izin_name', 'asc')->get();
         return view('meigen.man' , ["izin_data"=>$izin_data ]);
     }
     
     public function woman()
     {
-        $izin_data = Izin::where("gender","女")->get();
+        $izin_data = Izin::where("gender","女")->orderBy('izin_name', 'asc')->get();
         return view('meigen.woman' , ["izin_data"=>$izin_data ]);
     }
     
