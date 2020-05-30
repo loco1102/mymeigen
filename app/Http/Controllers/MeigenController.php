@@ -43,7 +43,7 @@ class MeigenController extends Controller
     
     public function name()
     {
-        $izin_data = Izin::orderBy('izin_name', 'asc')->get();
+        $izin_data = Izin::orderBy('izin_name', 'desc')->get();
         return view('meigen.name' , ["izin_data"=>$izin_data ]);
     }
     
