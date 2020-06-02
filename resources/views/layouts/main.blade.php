@@ -23,7 +23,7 @@
     </head>
     <body>
         <header>
-            <div>
+            <div class="logo2">
                 <div class="header-title-area">
                     <h1 class="logo"><a href="/meigen/index"><img src="{{ asset('/images/meigen.png') }}" width="274" height="89" alt="名言サイト"></a></h1>
                 </div>

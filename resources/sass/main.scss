@@ -220,3 +220,85 @@ html {
 }
 
 /*ここまでimage*/
+
+/*ここからレスポンシブデザイン*/
+
+@media screen and (max-width:480px) {
+  body {
+    font-size: 3.5vw;
+  }
+  
+  header {
+    width: auto;
+    margin: 0 5%;
+  }
+  
+  .logo2 {
+    float: none;
+    margin-top: 60px;
+    text-align: center;
+  }
+
+/*ここからナビゲーション*/
+  .header-navigation {
+    float: none;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  ul {
+    padding-right: 20px;
+  }
+  
+  .header-navigation li a {
+    float: none;
+    margin: 0 10px;
+  }
+/*ここまでナビゲーション*/
+  
+  .container {
+    width: 100%;
+  }
+  
+  .container2 {
+    width: 100%;
+  }
+  
+  .main {
+    width: 100%;
+  }
+  
+  /*ここからジャンルナビゲーション*/
+  .genre-navigation {
+    float: none;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .genre-navigation li a {
+    float: none;
+    margin: 0 10px;
+  }
+  
+  .genre-navigation li {
+  float: left;
+  padding: 0 8px;
+  text-align: center;
+  list-style-type: none;
+  }
+  /*ここまでジャンルナビゲーション*/
+  
+  .child {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 87px;
+    margin-bottom: 20px;
+    float: left;
+    font-size: 12px;
+  }
+  
+  .comment {
+  font-size: 20px;
+  text-align: center;
+  }
+}
